@@ -1,2 +1,15 @@
-# sistema-experto-hibrido
-Sistema experto híbrido para diagnóstico de fallas de encendido en computadoras utilizando Python, SWI-Prolog y CLIPS.
+# Sistema Experto Híbrido
+
+Prototipo de sistema experto híbrido para el diagnóstico de fallas de encendido en computadoras.
+
+## Tecnologías utilizadas
+
+- Python
+- Tkinter
+- SWI-Prolog
+- CLIPS
+
+## Ejecución
+
+```bash
+python interfaz.py
