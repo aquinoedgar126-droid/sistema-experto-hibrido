@@ -1,0 +1,14 @@
+COLOR_FONDO = "#0f172a"
+COLOR_PANEL = "#1e293b"
+COLOR_TARJETA = "#f8fafc"
+COLOR_BOTON = "#2563eb"
+COLOR_BOTON_HOVER = "#1d4ed8"
+COLOR_TEXTO_CLARO = "white"
+COLOR_TEXTO_GRIS = "#cbd5e1"
+COLOR_TEXTO_OSCURO = "#0f172a"
+
+FUENTE_TITULO = ("Arial", 22, "bold")
+FUENTE_SUBTITULO = ("Arial", 12)
+FUENTE_NORMAL = ("Arial", 11)
+FUENTE_BOTON = ("Arial", 11, "bold")
+FUENTE_RESULTADO = ("Arial", 11)
