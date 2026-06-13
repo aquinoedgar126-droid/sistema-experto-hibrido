@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Experto Híbrido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+```
+<!-- LOGO -->
+<div class="logo-container">
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         alt="Sistema Experto Híbrido"
+         class="logo">
+</div>
+
+<div class="contenedor">
+
+    <header>
+        <h1>Sistema Experto Híbrido</h1>
+        <p>Diagnóstico de fallas de encendido en computadoras</p>
+    </header>
+
+    <form method="POST" action="/#resultado" class="tarjeta">
+
+        <h2>Selecciona los síntomas observados</h2>
+
+        <div class="grid-sintomas">
+
+            <!-- ENERGÍA -->
+            <label><input type="checkbox" name="sintomas" value="no_enciende"> No enciende</label>
+
+            <label><input type="checkbox" name="sintomas" value="no_hay_luces"> No hay luces</label>
+
+            <label><input type="checkbox" name="sintomas" value="no_giran_ventiladores"> No giran ventiladores</label>
+
+            <!-- VIDEO -->
+            <label><input type="checkbox" name="sintomas" value="pantalla_negra"> Pantalla negra</label>
+
+            <label><input type="checkbox" name="sintomas" value="no_da_video"> No da video</label>
+
+            <label><input type="checkbox" name="sintomas" value="sin_senal_monitor"> Sin señal en monitor</label>
+
+            <!-- RAM -->
+            <label><input type="checkbox" name="sintomas" value="pitidos"> Pitidos al encender</label>
+
+            <label><input type="checkbox" name="sintomas" value="reinicios_aleatorios"> Reinicios aleatorios</label>
+
+            <label><input type="checkbox" name="sintomas" value="pantalla_azul"> Pantalla azul</label>
+
+            <!-- DISCO -->
+            <label><input type="checkbox" name="sintomas" value="no_detecta_disco"> No detecta disco</label>
+
+            <label><input type="checkbox" name="sintomas" value="arranque_lento"> Arranque lento</label>
+
+            <label><input type="checkbox" name="sintomas" value="sistema_no_encontrado"> Sistema operativo no encontrado</label>
+
+            <!-- TEMPERATURA -->
+            <label><input type="checkbox" name="sintomas" value="sobrecalentamiento"> Se calienta demasiado</label>
+
+            <label><input type="checkbox" name="sintomas" value="se_apaga_sola"> Se apaga sola</label>
+
+            <label><input type="checkbox" name="sintomas" value="ventilador_ruidoso"> Ventilador ruidoso</label>
+
+        </div>
+
+        <div class="botones">
+
+            <button type="submit">
+                Diagnosticar
+            </button>
+
+            <a href="/" class="btn-limpiar">
+                Limpiar
+            </a>
+
+        </div>
+
+    </form>
+
+    {% if resultado %}
+
+    <section id="resultado" class="resultado">
+
+        <h2>Resultado del diagnóstico</h2>
+
+        <p>
+            <strong>Categoría:</strong>
+            {{ resultado.categoria }}
+        </p>
+
+        <p>
+            <strong>Posible causa:</strong>
+            {{ resultado.causa }}
+        </p>
+
+        <p>
+            <strong>Recomendación:</strong>
+            {{ resultado.recomendacion }}
+        </p>
+
+    </section>
+
+    {% endif %}
+
+</div>
+```
+
+</body>
+
+</html>

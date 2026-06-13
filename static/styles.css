@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.contenedor {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+.tarjeta {
+    background: #1e293b;
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+}
+
+.grid-sintomas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.grid-sintomas label {
+    background: #334155;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button,
+.btn-limpiar {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-limpiar {
+    background: #64748b;
+    color: white;
+}
+
+.resultado {
+    margin-top: 25px;
+    background: #f8fafc;
+    color: #0f172a;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+    .grid-sintomas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo-container{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo{
+    max-width:260px;
+    width:100%;
+    height: auto;
+    border-radius: 14px;
+}
